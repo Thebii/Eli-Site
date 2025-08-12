@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background: #1a1a19;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  font-size: 1.2rem;
+}
+
+.navbar_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 20px;
+}
+
+.navbar_logo--container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  gap: 10px;
+}
+
+.logo_img {
+  width: 30px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.navbar_logo--container h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #FAF9F6;
+}
+
+.navbar_toggle {
+  display: none;
+}
+
+.navbar_menu {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+}
+
+.navbar_item {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.navbar_links {
+  color: #FAF9F6;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar_links:hover {
+  color: #555;
+}
+
+.bulk-metering-hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/bulk-metering-bg.jpg') center/cover;
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .bulk-metering-hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .bulk-metering-hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .bulk-section {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 20px;
+    }
+
+    .bulk-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .bulk-card {
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .bulk-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #1a1a19;
+    }
+
+    .bulk-card ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .bulk-card ul li {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .bulk-card ul li i {
+      color: #1a1a19;
+      margin-right: 10px;
+      font-size: 1.2rem;
+      margin-top: 2px;
+    }
+
+    .bulk-cta {
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    .bulk-cta a {
+      background-color: #1a1a19;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .bulk-cta a:hover {
+      background-color: #333;
+    }
+
+   
+
+.footer_container {
+  background-color: #141414;
+  color: #f1f1f1;
+  padding: 4rem 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.footer_top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+}
+
+.footer_col {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.footer_col h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.footer_col a {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.footer_col a:hover {
+  color: #ffffff;
+}
+
+.footer_col p {
+  margin: 0.3rem 0;
+  color: #bbb;
+  font-size: 0.95rem;
+}
+
+.footer_bottom {
+  border-top: 1px solid #333;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.footer_brand {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.footer_socials {
+  margin-top: 1rem;
+}
+
+.footer_socials a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.footer_socials a:hover {
+  color: #0f9d58; /* subtle highlight */
+}
+
+.copyright {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+.navbar_toggle.is-active .bar:nth-child(1){transform:translateY(8px) rotate(45deg);}
+.navbar_toggle.is-active .bar:nth-child(2){opacity:0;}
+.navbar_toggle.is-active .bar:nth-child(3){transform:translateY(-8px) rotate(-45deg);}

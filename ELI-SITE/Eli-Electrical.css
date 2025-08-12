@@ -1,0 +1,411 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background: #1a1a19;
+  height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;  
+    position: sticky;
+    top: 0;
+    z-index:999;
+    font-size: 1.2rem;
+}
+.navbar_logo--container {
+    margin-left: 5px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+.logo_img {
+  width: 30px;
+  height: 40px;
+  object-fit: contain;
+}
+.navbar_logo--container h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #FAF9F6;
+}
+.navbar_container{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.navbar_menu {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+}
+.navbar_item{
+    height: 70px;
+    padding: 20px 15px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.navbar_links {
+  color: #FAF9F6;
+  text-decoration: none;
+    padding: 10px;
+    height: 100%;
+    transition: color 0.3s ease-in-out;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/************************* Hero Section ********************/
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+/******************************* Whatsapp *********************************/
+.whatsapp-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0b5f2a;
+  color: white;
+  border-radius: 12px;
+  padding: 10px 16px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+.whatsapp-widget:hover {
+  background-color: #20b858;
+}
+.whatsapp-widget img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+.whatsapp-widget span {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Metering Section */
+.metering-intro {
+  background: #f3f3f3;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.metering-intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.metering-intro p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+}
+
+.services {
+  background: #fff;
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  gap: 40px;
+}
+
+.service {
+  background: #fafafa;
+  padding: 30px;
+  border-left: 6px solid #0b5f2a;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.service h3 {
+  font-size: 1.5rem;
+  color: #0b5f2a;
+  margin-bottom: 10px;
+}
+
+.service p,
+.service ul {
+  font-size: 1rem;
+  color: #333;
+}
+
+.service ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.service strong {
+  display: block;
+  margin-top: 15px;
+  color: #000;
+}
+
+
+.typesOfMeters {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.typesOfMeters h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.meter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.meterCard1, .meterCard2, .meterCard3, .meterCard4 {
+  padding: 30px 10px;
+  height: 200px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  text-decoration: none;
+  color: #222;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.meterCard1:hover, .meterCard2:hover, .meterCard3:hover, .meterCard4:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.meterCard1 h2, .meterCard2 h2, .meterCard3 h2, .meterCard4 h2 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.meterCard1 { border-top: 5px solid #2e8b57; }
+.meterCard2 { border-top: 5px solid #1e90ff; }
+.meterCard3 { border-top: 5px solid #ff8c00; }
+.meterCard4 { border-top: 5px solid #8a2be2; }
+
+
+/******************* Service Section ***********************/
+.metering-services{
+  background: #f3f3f3;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.metering-services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.metering-services p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+}
+
+.typesOfMeters {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.typesOfMeters h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+
+
+
+.footer_container {
+  background-color: #141414;
+  color: #f1f1f1;
+  padding: 4rem 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.footer_top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+}
+
+.footer_col {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.footer_col h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.footer_col a {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.footer_col a:hover {
+  color: #ffffff;
+}
+
+.footer_col p {
+  margin: 0.3rem 0;
+  color: #bbb;
+  font-size: 0.95rem;
+}
+
+.footer_bottom {
+  border-top: 1px solid #333;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.footer_brand {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.footer_socials {
+  margin-top: 1rem;
+}
+
+.footer_socials a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.footer_socials a:hover {
+  color: #0f9d58; /* subtle highlight */
+}
+
+.copyright {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+      .navbar_container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+      }
+
+      .navbar_toggle {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1001;
+      }
+
+      .navbar_toggle .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: #FAF9F6;
+        transition: all 0.3s ease;
+      }
+
+      .navbar_menu {  
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #000;
+        margin-top: 10px;
+        padding: 10px;
+        max-height: 0;
+      }
+
+      .navbar_menu.active {
+        display: flex;
+        max-height: 500px;
+      }
+
+      .navbar_item {
+        width: 100%;
+        text-align: left;
+        padding: 10px 0;
+      }
+  .navbar_toggle.is-active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.navbar_toggle.is-active .bar:nth-child(2) { opacity: 0; }
+.navbar_toggle.is-active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+.navbar_toggle .bar { transition: all .3s ease; }
+}

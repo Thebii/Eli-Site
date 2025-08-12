@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background: #1a1a19;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  font-size: 1.2rem;
+}
+
+.navbar_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 20px;
+}
+
+.navbar_logo--container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  gap: 10px;
+}
+
+.logo_img {
+  width: 30px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.navbar_logo--container h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #FAF9F6;
+}
+
+.navbar_toggle {
+  display: none;
+}
+
+.navbar_menu {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+}
+
+.navbar_item {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.navbar_links {
+  color: #FAF9F6;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar_links:hover {
+  color: #555;
+}
+
+/* Revenue Protection Hero */
+.metering-services{
+  background: #f3f3f3;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.metering-services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.metering-services p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* Meter Installation Section */
+.meter-installation {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.meter-installation .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.meter-installation h2 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.meter-installation p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.cost-list, .audit-points {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.cost-list li, .audit-points li {
+  background: #f8f8f8;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  border-left: 5px solid #0f9d58;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.audit-points li i {
+  color: #0f9d58;
+  font-size: 1.2rem;
+}
+
+.highlight {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #0f9d58;
+  margin-bottom: 2rem;
+}
+
+/* Client Cards */
+.client-types {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.client-card {
+  background: #f3f3f3;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: background 0.3s ease;
+}
+
+.client-card:hover {
+  background-color: #eaeaea;
+}
+
+.client-card i {
+  font-size: 1.3rem;
+  color: #1a1a1a;
+}
+
+
+
+.footer_container {
+  background-color: #141414;
+  color: #f1f1f1;
+  padding: 4rem 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.footer_top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+}
+
+.footer_col {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.footer_col h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.footer_col a {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.footer_col a:hover {
+  color: #ffffff;
+}
+
+.footer_col p {
+  margin: 0.3rem 0;
+  color: #bbb;
+  font-size: 0.95rem;
+}
+
+.footer_bottom {
+  border-top: 1px solid #333;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.footer_brand {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.footer_socials {
+  margin-top: 1rem;
+}
+
+.footer_socials a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.footer_socials a:hover {
+  color: #0f9d58; /* subtle highlight */
+}
+
+.copyright {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+.navbar_toggle.is-active .bar:nth-child(1){transform:translateY(8px) rotate(45deg);}
+.navbar_toggle.is-active .bar:nth-child(2){opacity:0;}
+.navbar_toggle.is-active .bar:nth-child(3){transform:translateY(-8px) rotate(-45deg);}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELIGUGU Website</title>
+    <link rel="stylesheet" href="Eli-Electrical.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha324-HzLeBuhoNPv5l5KYnjx0BT+WB0QEEqLpr0
+    +NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+    crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!-- NAVAGATION BAR -->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a class="navbar_logo--container" href="index.html">
+                <img src="images/logo.png" style="width: 30px; height: 40px;" alt="pic" class="logo_img" >
+                <h1>Eligugu Pty Ltd</h1>
+            </a>            
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+              <li class="navbar_item">
+                <a href="index.html" class="navbar_links">HOME</a>
+              </li>
+              <li class="navbar_item">
+                <a href="Eli-Electrical.html" class="navbar_links">METERING</a>
+              </li>
+              <li class="navbar_item">
+                <a href="FAQ.html" class="navbar_links">FAQ</a>
+              </li>
+              <li class="navbar_item">
+                <a href="https://online.eligugu.co.za/" class="navbar_links">BUY TOKENS</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero-banner">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="images/eli-elec-hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+      <h1>Metering Services</h1>
+    </div>
+  </section>
+
+  <!-- WhatsApp Widget -->
+  <a href="https://wa.me/27630366604?text=Hi%20Eligugu%20I'm%20interested%20in%20your%20services" target="_blank" class="whatsapp-widget">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    <span>Chat with us</span>
+  </a>
+
+  <!-- METERING INTRO -->
+  <section class="metering-intro">
+    <h2>Your Trusted Partner in Electrical Metering</h2>
+    <p>Eligugu Pty Ltd provides reliable, cost-saving electrical metering solutions — from traditional prepaid to smart, bulk, and revenue protection systems.</p>
+  </section>
+
+ <!--Types of meters-->
+  <section class="typesOfMeters">
+    <div class="meter-grid">
+      <a href="bulkMeters.html" class="meterCard1"><h2>Bulk meters</h2></a>
+      <a href="waterMeters.html" class="meterCard2"><h2>Water meters</h2></a>
+      <a href="smartMeters.html" class="meterCard3"><h2>Smart meters</h2></a>
+      <a href="sts.html" class="meterCard4"><h2>STS meters</h2></a>
+</div>
+</section> 
+
+  <section class="metering-services">
+    <h2>Metering Services</h2>
+    <p>Eligugu Pty Ltd provides reliable, cost-saving electrical metering solutions — from traditional prepaid to smart, bulk, and revenue protection systems.</p>
+  </section>
+
+   <!--Types of metering services-->
+  <section class="typesOfMeterServices">
+    <div class="meter-grid">
+      <a href="subMetering.html" class="meterCard1"><h2>Sub-Metering</h2></a>
+      <a href="bulkMetering.html" class="meterCard2"><h2>Bulk Metering</h2></a>
+      <a href="revenueProtection.html" class="meterCard3"><h2>Revenue Protection</h2></a>
+      <a href="auditingInstallation.html" class="meterCard4"><h2>Meter Auditing and Installation</h2></a>
+</div>
+</section> 
+<footer class="footer_container">
+  <div class="footer_top">
+    <div class="footer_col">
+      <h2>Eligugu Pty LTD</h2>
+      <p>If you lose a token, SMS or WhatsApp your meter number to <strong>063 036 6604</strong> to get the latest token. Or call our centre at <strong>011 241 4880</strong>.</p>
+    </div>
+    <div class="footer_col">
+      <h2>About Us</h2>
+      <a href="about.html">Our Story</a>
+      <a href="FAQ.html">FAQs</a>
+    </div>
+    <div class="footer_col">
+      <h2>Contact</h2>
+      <a href="contactus.html">Contact Page</a>
+    </div>
+    <div class="footer_col">
+      <h2>Business Hours</h2>
+      <p>Mon–Fri: 08:00 – 16:30</p>
+      <p>Sat: 08:00 – 13:00</p>
+      <p>Sun & Holidays: Closed</p>
+    </div>
+  </div>
+
+  <div class="footer_bottom">
+    <div class="footer_brand">
+      <a id="footer_logo"><i class="fas fa-gem"></i> Eligugu Pty Ltd</a>
+    </div>
+    <p class="copyright">© 2021 Eligugu Pty Ltd. All rights reserved.</p>
+    <div class="footer_socials">
+      <a href="https://www.facebook.com/eligugu.co.za/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/27630366604?text=Hi%20Eligugu%20I'm%20interested%20in%20your%20services" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+</footer>
+<script>
+  const menu = document.getElementById('mobile-menu');
+  const menuLinks = document.querySelector('.navbar_menu');
+
+  function scrollGallery(direction) {
+
+    const gallery = document.getElementById('productGallery');
+    const scrollAmount = 300;
+    gallery.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth'
+    });
+}
+  
+menu.addEventListener('click', () => {
+      const open = menu.classList.toggle('is-active');
+      menuLinks.classList.toggle('active');
+      menu.setAttribute('aria-expanded', open);
+    });
+
+  document.addEventListener('click', function (event) {
+    const isMenuOpen = menu.classList.contains('is-active');
+    if (isMenuOpen && !menu.contains(event.target) && !menuLinks.contains(event.target)) {
+      menu.classList.remove('is-active');
+      menuLinks.classList.remove('active');
+    }
+  });
+  menuLinks.addEventListener('click', function (event) {
+    event.stopPropagation();
+  });
+
+// close on link click
+menuLinks.querySelectorAll('a').forEach(link =>
+  link.addEventListener('click', () => {
+    menu.classList.remove('is-active');   
+    menuLinks.classList.remove('active');
+  })
+);
+
+menuLinks.addEventListener('click', function (event) {
+    event.stopPropagation();
+    });
+  </script>
+</body>
+</html>
+
+
